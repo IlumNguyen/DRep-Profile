@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "Viet_Cardano_Community",
+    "motivations": "We want to become DReps to actively contribute to Cardano's growth and success. We have experience as community administrators, speakers, and trainers for the DRep training program in Vietnam. These roles have prepared us to represent diverse perspectives and actively engage with the community. We are motivated by a shared passion for fostering innovation and inclusivity within the Cardano ecosystem.",
+    "objectives": "We believe in the power of decentralization and the potential of blockchain technology to create a fairer and more transparent society. As DReps, we aim to represent the Cardano community's interests, advocate for meaningful changes, and help drive governance decisions that align with the network's long-term vision.",
+    "paymentAddress": "addr1q9djpykt9fuqh80zfwk3g38lgdckg9d7sk79uraw8ljz2kkwnsy3zaw63m3lnnruxlgvp56x0956cfy4a7tzjvzp728sr4gq0n",
+    "qualifications": "- We have experience as community admins, managing and leading the largest Cardano ADA community in Vietnam.\n\n- Acted as speakers at Cardano meetups, Cardano Summit and workshops, sharing insights and knowledge about the ecosystem.\n\n- Trained participants for the DRep training program in Vietnam, helping them understand their roles and responsibilities.\n\n- Possess strong technical skills in Cardano, including experience with Cardano CLI and governance processes.\n\n- Engaged actively in governance activities, demonstrating a deep understanding of Cardano's community needs and values.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Our official Twitter channel sharing activities of the Cardano Vietnam community",
+        "uri": "https://x.com/VCoinCheck"
+      },
+      {
+        "@type": "Identity",
+        "label": "Telegram: Jimmy Lee",
+        "uri": "https://t.me/Jimmy_Lee01"
+      },
+      {
+        "@type": "Identity",
+        "label": "Telegram: Quang Daniel",
+        "uri": "https://t.me/quang_daniel"
+      },
+      {
+        "@type": "Identity",
+        "label": "Telegram: Sang Nguyen",
+        "uri": "https://t.me/IlumNguyen"
+      }
+    ]
+  }
+}
